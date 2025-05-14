@@ -55,7 +55,7 @@ The web app follows a **white and golden** color palette to maintain a clean, mo
 
 ## 🚀 Live Demo
 
-🌐 Coming Soon...
+🌐 Visit our [Career Campus](https://courageous-crepe-96002b.netlify.app/)
 
 ---
 
