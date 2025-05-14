@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aptitude Test| Career Campus</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&display=swap">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="aptitude.css">
+</head>
+
+<body>
+    <div id="nav">
+        <img src="/assets/logo3.png" alt="Logo" class="logo">
+        <h1>Career Campus</h1>
+        <div id="parts">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="application.html" >View Applications</a></li>
+                <li><a href="aptitude.html" class="active">Aptitude</a></li>
+                <li><a href="finder.html">College Finder</a></li>
+                <li id="profile"><a href="dashboard.html">Profile</a></li>
+                <li id="logoutBtn"><a href="">Logout</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="timer">
+        Time Remaining: <span id="time-remaining">00:00</span>
+    </div>
+
+    <div class="quiz-container" id="quizco">
+        <h2>Take Your Aptitude Test</h2>
+        <div id="college-name"></div>
+
+        <!-- Dynamic quiz questions will be injected here -->
+        <div id="quiz-container">
+            <!-- Questions will be dynamically inserted via JS -->
+        </div>
+
+        <!-- Button to start the test -->
+        <div id="start-button-container">
+            <button id="startTestBtn">Start Test</button>
+        </div>
+
+        <!-- Submit button (initially hidden) -->
+        <div id="button-container">
+            <button id="submitQuizBtn" style="display:none;">Submit Quiz</button>
+        </div>
+    </div>
+    <footer>
+        &copy; 2025 Career Campus | A Smart Step Towards Your Future 🚀
+      </footer>
+
+    <script type="module" src="aptitude.js"></script>
+</body>
+
+</html>

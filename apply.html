@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application page | Career Campus</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family?family=Montserrat&display=swap">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="apply.css">
+</head>
+<body>
+    <div id="nav">
+        <img src="/assets/logo3.png" alt="Logo" class="logo">
+        <h1>Career Campus</h1>
+        <div id="parts">
+            <ul>
+              <li><a href="home.html" >Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="aptitude.html">Aptitude</a></li>
+              <li><a href="finder.html" class="active">College finder</a></li>
+              <li id = "profile"><a href="dashboard.html">Profile</a></li>
+              <li id="logoutBtn"><a href="">Logout</a></li>
+            </ul>
+          </div>
+    </div>
+
+    <div class="container">
+    <h2>Apply to <span id="selectedCollege" style="color:goldenrod;"></span></h2>
+    <form id="applicationForm">
+        <label for="fullName">Full Name</label>
+        <input type="text" id="fullName" placeholder="Full Name" required />
+      
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Email" required />
+      
+        <label for="phone">Phone</label>
+        <input type="text" id="phone" placeholder="Phone Number" required />
+      
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" required />
+
+        <label for="course">Course</label>
+        <input type="text" id="course" required>
+      
+        <label for="address">Address</label>
+        <input type="text" id="address" placeholder="Your Address" required />
+      
+        <label for="aptitudeTest">Aptitude Test</label>
+        <input type="text" id="aptitudeTest" placeholder="Aptitude Test Score" />
+      
+        <label for="board">Board</label>
+        <input type="text" id="board" placeholder="Board of Education" required />
+      
+        <label for="marks10">Marks in 10th</label>
+        <input type="number" id="marks10" placeholder="Marks in 10th Grade" required />
+      
+        <label for="marks12">Marks in 12th</label>
+        <input type="number" id="marks12" placeholder="Marks in 12th Grade" required />
+      
+        <label for="state">State</label>
+        <input type="text" id="state" placeholder="State" required />
+      
+        <label for="district">District</label>
+        <input type="text" id="district" placeholder="District" />
+      
+        <label for="stream">Stream</label>
+        <input type="text" id="stream" placeholder="Your Stream" required />
+      
+        <label for="emergencyContactName">Emergency Contact Name</label>
+        <input type="text" id="emergencyContactName" placeholder="Emergency Contact Name" required />
+      
+        <label for="emergencyContactPhone">Emergency Contact Phone</label>
+        <input type="text" id="emergencyContactPhone" placeholder="Emergency Contact Phone" required />
+      
+        <label for="parentContact">Parent Contact</label>
+        <input type="text" id="parentContact" placeholder="Parent Contact" required />
+      
+        <label for="parentName">Parent Name</label>
+        <input type="text" id="parentName" placeholder="Parent Name" required />
+      
+        <label for="previousSchool">Previous School</label>
+        <input type="text" id="previousSchool" placeholder="Previous School" required />
+      
+        <label for="gender">Gender</label>
+        <select id="gender">
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Other">Other</option>
+        </select>
+      
+        <button type="submit">Submit Application</button>
+      </form>
+    </div>
+
+
+    <div id="collegeDetails"></div>
+    <input type="hidden" id="collegeIdInput" value="" />
+    <input type="hidden" id="collegeNameInput" value="" />
+    
+
+
+    <div id="aptitudePopup" style="display:none;" class="popup">
+        <div class="popup-content">
+          <h2>Application Submitted Successfully!</h2>
+          <p>You will now be redirected to take the aptitude test for this college.</p>
+          <button id="proceedTest" href="aptitude.html">Proceed to Aptitude Test</button>
+        </div>
+      </div>
+      
+      <footer>
+        &copy; 2025 Career Campus | A Smart Step Towards Your Future 🚀
+      </footer>
+
+</body>
+</html>
+<script type="module" src="apply.js" defer></script>

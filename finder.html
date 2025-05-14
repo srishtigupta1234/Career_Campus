@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Finder | Career Campus</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family?family=Montserrat&display=swap">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="finder.css">
+</head>
+<body>
+    <div id="nav">
+        <img src="/assets/logo3.png" alt="Logo" class="logo">
+        <h1>Career Campus</h1>
+        <div id="parts">
+            <ul>
+              <li><a href="home.html" >Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li id="appn"><a href="application.html" >View Applications</a></li>
+              <li id="aptitudee"><a href="aptitude.html">Aptitude</a></li>
+              <li><a href="finder.html" class="active">College finder</a></li>
+              <li id="profile"><a href="dashboard.html">Profile</a></li>
+              <li id="logoutBtn"><a href="">Logout</a></li>
+            </ul>
+          </div>
+    </div>
+
+  <div class="container">
+    <h1>Find Your Ideal College</h1>
+
+ 
+    </div>
+
+  <div class="search-box">
+    <input type="text" id="searchInput" placeholder="Search College by Name..." />
+    <button onclick="searchColleges()">Search</button>
+      <button id="in">🇮🇳 India</button>
+      <button id="ab">🌍 Abroad</button>
+    </div>
+
+
+  </div>
+  <div id="collegeList" class="college-list"></div>
+
+  <footer>
+    &copy; 2025 Career Campus | A Smart Step Towards Your Future 🚀
+  </footer>
+
+</body>
+</html>
+<script type="module" src="finder.js"></script>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | Career Campus</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family?family=Montserrat&display=swap"
+    />
+    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="nav.css" />
+  </head>
+  <body>
+    <div id="nav">
+      <img src="/assets/logo3.png" alt="Logo" class="logo" />
+      <h1>Career Campus</h1>
+      <div id="parts">
+        <ul>
+          <li><a href="home.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li id="appn"><a href="application.html">View Applications</a></li>
+          <li id="aptitude"><a href="aptitude.html">Aptitude</a></li>
+          <li><a href="finder.html">College finder</a></li>
+          <li id="profile"><a href="dashboard.html">Profile</a></li>
+          <li id="login"><a href="login.html">Login</a></li>
+          <li id="register"><a href="index.html">Register</a></li>
+          <li id="logoutBtn"><a href="">Logout</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="base1">
+      <div class="hero-section">
+        <div id="banner">
+          <img src="/assets/logo3.png" alt="" />
+        </div>
+        <h1>Welcome to Career Campus</h1>
+        <div  id = "greet" style="display: none"></div>
+        <button id="tat">Take Aptitude test</button>
+        <button id="ec">Explore Colleges</button>
+      </div>
+    </div>
+   <!-- How It Works Section -->
+<section class="how-it-works">
+  <h2> How It Works</h2>
+  <div class="steps-container">
+    <div class="step-card" id="one">
+      <span>1️⃣</span>
+      <h3>Edit Your Profile</h3>
+      <p>Start by Editing your profile that highlights your preferences and details.</p>
+    </div>
+    <div class="step-card" id="two">
+      <span>2️⃣</span>
+      <h3>Apply or Get Counselling</h3>
+      <p>Apply to your chosen college or get expert career counselling to guide your next steps.</p>
+    </div>
+    <div class="step-card" id="three">
+      <span>3️⃣</span>
+      <h3>Take the Aptitude Test</h3>
+      <p>Complete a short aptitude test to assess your skills and career fit.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Top Features Section -->
+<section class="top-features">
+  <h2> Top Features & Services</h2>
+  <div class="features-grid">
+    <div class="feature-card">
+      <span class="emoji">🎓</span>
+      <h3>College Recommendations</h3>
+      <p>Find colleges that best match your preferences and academic goals.</p>
+    </div>
+    <div class="feature-card">
+      <span class="emoji">🧪</span>
+      <h3>Aptitude Assessment</h3>
+      <p>Assess your strengths and weaknesses to find the ideal career path.</p>
+    </div>
+    <div class="feature-card">
+      <span class="emoji">💼</span>
+      <h3>Career Suggestions</h3>
+      <p>Get personalized career advice based on your aptitudes and interests.</p>
+    </div>
+    <div class="feature-card">
+      <span class="emoji">📊</span>
+      <h3>Track Applications</h3>
+      <p>Monitor the status of your college applications and stay up-to-date.</p>
+    </div>
+  </div>
+</section>
+
+    <section id="myApplications" class="app-section">
+      <h2>My Applications</h2>
+      <div id="applicationList">
+        <!-- Application cards will be injected here -->
+      </div>
+    </section>
+
+    <footer>
+      &copy; 2025 Career Campus | A Smart Step Towards Your Future 🚀
+    </footer>
+  </body>
+</html>
+<script type="module" src="home.js"></script>

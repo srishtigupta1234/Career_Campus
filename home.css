@@ -1,0 +1,312 @@
+/* Base Styling */
+body {
+  font-family: 'Nunito', sans-serif;
+  line-height: 1.7;
+  margin: 0;
+  padding: 0;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(to right, #fff3cd, #ffeb99);
+  color: #1c1c1c;
+  text-align: center;
+  padding: 60px 20px 40px;
+  border-radius: 20px 20px 20px 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  position: relative;
+}
+
+.hero-section h1 {
+  font-size: 2.9rem;
+  font-weight: 650;
+  margin-top:-30px;
+  margin-bottom: 8px;
+  color: #080808;
+}
+
+.greeting-msg {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #444;
+}
+
+/* Base Container */
+#base1 {
+  background-color: #ffffff;
+  border-radius: 14px;
+  padding: 40px 30px;
+  margin: 40px auto;
+  max-width: 1200px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Button Styling */
+button {
+  background: linear-gradient(to right, #ffa07a, #ff4500);
+  border: none;
+  color: white;
+  padding: 12px 28px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-weight: 600;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background: linear-gradient(to right, #ff7043, #ff5722);
+  transform: scale(1.04);
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+/* Application Section */
+.app-section {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.app-section h2 {
+  margin-bottom: 25px;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333;
+}
+
+/* Application Card */
+.app-card {
+  background: #ffffff;
+  border-left: 6px solid #ffc107;
+  border-radius: 14px;
+  padding: 24px;
+  margin: 20px auto;
+  max-width: 550px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+
+.app-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+.app-card h3 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.app-card p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+/* Toggle Button */
+.toggle-details {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 22px;
+  margin-top: 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.toggle-details:hover {
+  background-color: #218838;
+}
+
+/* Application Details Box */
+.app-details {
+  margin-top: 16px;
+  background-color: #f8f9fa;
+  padding: 16px;
+  border-left: 4px solid #ffca28;
+  border-radius: 10px;
+  color: #444;
+  line-height: 1.6;
+}
+/* General Section Styling */
+.how-it-works, .top-features {
+  text-align: center;
+  padding: 60px 20px;
+  background: #fffefc;
+  border-radius: 20px;
+  margin: 40px auto;
+  max-width: 1100px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.how-it-works:hover, .top-features:hover {
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.how-it-works h2,
+.top-features h2 {
+  font-size: 2.4rem;
+  margin-bottom: 40px;
+  font-weight: 700;
+  color: #2c3e50;
+  text-transform: uppercase;
+}
+
+/* Step Cards */
+.steps-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.step-card {
+  background: #fef7e0;
+  border: 2px solid #ffdb7d;
+  border-radius: 14px;
+  padding: 30px;
+  width: 220px;
+  max-width: 90%;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.step-card span {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.step-card h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.step-card p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+  margin: 10px 0 0;
+  transition: color 0.3s ease;
+}
+
+.step-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.step-card:hover p {
+  color: #333;
+}
+
+/* Features Section */
+.features-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.feature-card {
+  background: #f1f9ff;
+  border-left: 6px solid #0099cc;
+  border-radius: 12px;
+  padding: 30px;
+  width: 250px;
+  text-align: center;
+  max-width: 90%;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card .emoji {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.feature-card h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #272626;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+  transition: color 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card:hover .emoji {
+  transform: scale(1.2);
+}
+
+.feature-card:hover p {
+  color: #333;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .step-card, .feature-card {
+    width: 100%;
+    max-width: 90%;
+    margin: 10px 0;
+  }
+}
+
+
+/* Banner Icon (if used) */
+#banner {
+  width: 70px;
+  height: 20px;
+  margin: 0px 80px 0px;
+}
+
+/* Responsive Enhancements */
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2.2rem;
+  }
+
+  .greeting-msg {
+    font-size: 1rem;
+  }
+
+  #base1 {
+    padding: 24px;
+    margin: 20px;
+  }
+
+  button {
+    width: 100%;
+    margin: 12px 0;
+  }
+
+  .app-card {
+    padding: 20px;
+    margin: 16px;
+  }
+
+  .app-section h2 {
+    font-size: 1.6rem;
+  }
+}

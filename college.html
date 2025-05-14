@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerGuidance-college sign up</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family?family=Montserrat&display=swap">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="college.css">
+</head>
+<body>
+    <div id="nav">
+        <h1>Career Guidance</h1>
+        <div id="parts">
+            <ul>
+                <li><a href="home.html" >Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html" >Login</a></li>
+                <li><a href="index.html">Register</a></li>
+            </ul>
+          </div>
+    </div>
+
+    <div id="form">
+        <h1 id="regis">College Registration</h1>
+        <form id="collegeRegister">
+    
+          <h2>College Information</h2>
+          <label for="collegeName">College Name</label>
+          <input type="text" id="collegeName" placeholder="Enter College Name" required />
+    
+          <label for="collegeCode">College Code</label>
+          <input type="text" id="collegeCode" placeholder="Enter College Code" required />
+    
+          <label for="collegeAddress">Address</label>
+          <textarea id="collegeAddress" placeholder="Enter Full Address" required></textarea>
+    
+          <label for="state">State</label>
+          <input type="text" id="state" placeholder="Enter State" required />
+    
+          <label for="district">District</label>
+          <input type="text" id="district" placeholder="Enter District" required />
+    
+          <label for="collegeEmail">Email</label>
+          <input type="email" id="collegeEmail" placeholder="Enter Email" required />
+    
+          <label for="collegePhone">Phone Number</label>
+          <input type="tel" id="collegePhone" placeholder="Enter Phone Number" required />
+    
+          <label for="collegeWebsite">Website</label>
+          <input type="url" id="collegeWebsite" placeholder="Enter Website (optional)" />
+    
+          <h2>Courses Offered</h2>
+          <label for="coursesOffered">List all courses offered (comma‑separated or one per line)</label>
+          <textarea id="coursesOffered" placeholder="e.g. BCA, BSc, BBA, etc." required></textarea>
+    
+          <label for="numSeats">Number of Seats</label>
+          <input type="number" id="numSeats" placeholder="Total Seats Available" required />
+    
+          <label for="eligibility">Eligibility Criteria</label>
+          <textarea id="eligibility" placeholder="Mention eligibility criteria" required></textarea>
+    
+          <h2>Facilities</h2>
+          <label><input type="checkbox" name="facilities" value="Hostel" /> Hostel</label>
+          <label><input type="checkbox" name="facilities" value="Library" /> Library</label>
+          <label><input type="checkbox" name="facilities" value="Placement" /> Placement Cell</label>
+          <label class="terms-label"><input type="checkbox" id="facilityOtherCheckbox" /> Other Facility</label>
+          <input type="text" id="facilityOtherInput" placeholder="Specify other facility" style="display:none;" />
+    
+          <label for="accreditation">Accreditation</label>
+          <select id="accreditation" required>
+            <option value="">Select Accreditation</option>
+            <option value="NAAC">NAAC</option>
+            <option value="AICTE">AICTE</option>
+            <option value="None">None</option>
+          </select>
+    
+          <h2>Aptitude Test Questions</h2>
+          <div id="aptitudeContainer">
+            <div class="aptitude-question">
+              <label for="aptitude1">Question 1</label>
+              <input type="text" name="aptitude[]" id="aptitude1" placeholder="Enter question" required />
+            </div>
+          </div>
+          <button type="button" id="addQuestionBtn">Add Another Question</button>
+    
+          <h2>Login Information</h2>
+          <label for="collegePassword">Password</label>
+          <input type="password" id="collegePassword" placeholder="Enter Password" required />
+    
+          <label for="collegeConfirmPassword">Confirm Password</label>
+          <input type="password" id="collegeConfirmPassword" placeholder="Confirm Password" required />
+    
+          <button type="submit">Register</button>
+        </form>
+      </div>
+         
+    <script type="module" src="college.js"></script>
+</body>
+</html>

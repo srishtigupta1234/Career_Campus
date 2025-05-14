@@ -1,0 +1,198 @@
+/* Global Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Form Container */
+#form2 ,#form {
+    width: 90%;
+    max-width: 850px;
+    margin: 60px auto;
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Title */
+#regis {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+
+/* Section Headings */
+h2 {
+    background-color: #faf6ea;
+    padding: 10px 15px;
+    border-left: 5px solid #d4af37;
+    border-radius: 5px;
+    color: #444;
+    font-size: 1.4rem;
+    margin-top: 30px;
+}
+
+/* Input Labels */
+label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #444;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+/* Inputs, Selects, Textareas */
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 22px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+    background-color: #fcfcfc;
+}
+
+input[type="date"] {
+    color: #555;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #d4af37;
+    background-color: #fffdf6;
+    box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.2);
+    outline: none;
+}
+
+/* Placeholder text style */
+input::placeholder,
+textarea::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+
+/* Submit Button */
+button {
+    width: 100%;
+    padding: 16px;
+    background-color: #d4af37;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 10px rgba(212, 175, 55, 0.3);
+}
+
+button:hover {
+    background-color: #c49723;
+}
+
+/* Already have account */
+#display {
+    text-align: center;
+    font-size: 1rem;
+    color: #555;
+    margin-top: 30px;
+}
+
+#reg {
+    color: #d4af37;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#reg:hover {
+    text-decoration: underline;
+}
+
+/* Error or Validation Messages */
+.error {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: -15px;
+    margin-bottom: 10px;
+}
+
+/* Checkbox + Label */
+.terms-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.terms-label input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #d4af37;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #form {
+        width: 95%;
+        padding: 30px 20px;
+    }
+
+    #regis {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    input,
+    select,
+    textarea {
+        font-size: 0.95rem;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+}
+/* Aptitude Test Section Styles */
+/* .aptitude-section {
+    margin-top: 20px;
+    background-color: #fef9ec;
+    padding: 15px 20px;
+    border-left: 4px solid #d4af37;
+    border-radius: 6px;
+} */
+
+/* Align checkbox and label nicely */
+.aptitude-check {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.aptitude-check input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: #d4af37;
+    margin: 0;
+}
+
+#atScore, #atDate {
+    transition: all 0.3s ease;
+}

@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  line-height: 1.7;
+}
+
+/* Root Container */
+.profile-container {
+  background: linear-gradient(to right, #ffffff, #f8f8f8); /* Mild gradient for container */
+  color: #4a4a4a; /* Dark grey text */
+  padding: 2rem;
+  border-radius: 16px;
+  max-width: 1200px;
+  margin: 2rem auto;
+  box-shadow: 0 0 25px rgba(245, 200, 91, 0.1);
+  font-family: "Segoe UI", sans-serif;
+  line-height: 1.8;
+}
+
+/* Title */
+.profile-container h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #f5c85b; /* Soft gold for title */
+  border-bottom: 2px solid #f5c85b;
+  padding-bottom: 0.5rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Profile Card Layout */
+.profile-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Boxes */
+.profile-info, .emergency-info, .school-info {
+  background: #fafafa; /* Light grey background for sections */
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: inset 0 0 10px rgba(255, 215, 0, 0.05);
+}
+
+/* Text Fields */
+.profile-info p, .emergency-info p, .school-info p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: #6c6c6c; /* Dark grey text */
+}
+
+/* Strong Tags */
+.profile-info strong, .emergency-info strong, .school-info strong {
+  color: #f5c85b; /* Golden color for strong text */
+  font-weight: bold;
+}
+
+/* Subtitles */
+.profile-info h3, .emergency-info h3, .school-info h3 {
+  color: #f5c85b;
+  margin-bottom: 1rem;
+  border-left: 5px solid #f5c85b;
+  padding-left: 10px;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+/* Input Fields */
+.editable-input {
+  display: block;
+  width: 94%;
+  font-size: 1rem;
+  padding: 0.8rem;
+  margin-top: 0.2rem;
+  background-color: #ffffff;
+  border: 1px solid #d3d3d3; /* Light grey border */
+  color: #333;
+  border-radius: 6px;
+  transition: border 0.3s ease;
+}
+
+.editable-input:focus {
+  border-color: #f5c85b; /* Golden border on focus */
+  outline: none;
+}
+
+/* Field Blocks */
+.field-block {
+  margin-bottom: 1.5rem;
+}
+
+/* Buttons */
+button {
+  display: block;
+  margin: 2rem auto 0;
+  padding: 0.6rem 2rem;
+  background:  linear-gradient(to right, #ffa07a, #ff4500); /* Gradient effect for button */
+  color: #ffffff; /* Dark text color */
+  font-weight: 600;
+  font-size:1.5rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width:180px;
+  height:70px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+}
+
+button:hover {
+  background:  linear-gradient(to left, #ffa07a, #ff4500); /* Reverse gradient on hover */
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .profile-card {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-container {
+    padding: 1.5rem;
+  }
+
+  button {
+    width: 80%;
+  }
+}
